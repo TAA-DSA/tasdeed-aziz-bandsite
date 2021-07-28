@@ -1,0 +1,11 @@
+# ignore scss map file
+*.css.map
+
+# ignore DS_store
+.DS_Store
+
+# ignore assets folder
+assets/
+
+
+
