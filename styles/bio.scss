@@ -1,0 +1,115 @@
+@use 'partials/mixins' as *;
+@use 'partials/variables' as *;
+
+*, *::before, *::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+
+
+@include tablet{
+    .header{
+        width:100%;
+        padding: 2rem;
+        background-color:black;
+        color: white;
+      
+
+    }
+
+    .header__img{
+        display: flex;
+        position: center;
+        padding-bottom: 2rem;
+    }
+
+    .navbar__lists{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding:2rem;
+    }
+
+    .navbar__links{
+        display: flex;
+        
+        
+    }
+}   
+    .bees{
+         padding: 2rem;
+         width: 100%;
+         min-height: 28rem;
+         max-height: 30rem;
+         background-image: url('../assets/images/hero-bio.jpg');
+         background-position: center;
+         background-size: cover;
+         color: white ;
+
+}   .musician__header{
+    padding: 2rem;
+}   
+    .musician__img{
+        display: flex;
+        margin: 5rem;
+        width: 80%;
+        
+
+        
+    }
+ .photo__gallery--dance{
+      padding: 2rem;
+      width: 80%;
+    }
+
+
+   .footer__header{
+       padding-bottom: 1rem;
+
+   }
+
+  .footer{
+      padding: 2rem;
+      background-color: black;
+      color: white;
+  }
+
+  .footer__icon{
+      padding-bottom: 1rem;
+  }
+ 
+//   update images
+
+  .footer__header--company{
+      padding-bottom: 1rem;
+  }
+
+  .footer__paragraph--email{
+      padding-top:1rem;
+  }
+
+  .pearl__gregg{
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+    }
+  .pear__gregg--agent{
+    padding-top: 1rem;
+  }
+
+  .carson__whyte{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .carson__whyte--agent{
+      padding-top: 1rem;
+  }
+
+  .footer__logo{
+      padding-top: 1rem;
+    }
+
+ .footer__logo--copyright{
+     padding-top: 1rem;
+ }
