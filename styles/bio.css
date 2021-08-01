@@ -140,15 +140,26 @@
     padding: 1rem;
     background-color: #323232;
     color: white;
+    padding: 2rem;
   }
 
   .footer__icon {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
   }
 
   .footer__header--company {
+    padding-bottom: 1rem;
+  }
+
+  .footer__header {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .footer__mangement {
     padding-bottom: 1rem;
   }
 
