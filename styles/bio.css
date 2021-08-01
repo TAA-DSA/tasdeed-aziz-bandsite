@@ -204,7 +204,7 @@
     font-style: bold;
   }
 
-  .navbar__lists {
+  .navbar__clicks {
     margin-right: 2rem;
   }
 
@@ -258,10 +258,17 @@
     left: 83%;
   }
 
-  .musician__paragraph--note {
+  .text_paragraph {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .musician__paragraph--note {
+    padding-left: 6rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;
   }
 
   .musician__paragraph--title {
