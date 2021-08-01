@@ -207,6 +207,42 @@
   .navbar__lists {
     margin-right: 2rem;
   }
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer__icon {
+    margin-left: 1rem;
+  }
+
+  .footer__mangement {
+    padding-bottom: 1rem;
+  }
+
+  .carson__whyte {
+    padding-top: 2.6rem;
+  }
+
+  .photo__music {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo__gallery--dance {
+    width: 30%;
+  }
 }
 @media screen and (min-width: 80rem) {
   .header__img {
