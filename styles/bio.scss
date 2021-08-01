@@ -41,12 +41,16 @@
         @include sub-header;
         display: flex;
         text-decoration: none;
+        font-weight: 300;
+        font-style: normal;
         color: white;
 
     }
 
     .navbar__clicks:hover{
-       border: 2px white;
+        font-weight: 700;
+        color:white;
+    
     }
 
     .bees{
@@ -267,6 +271,7 @@
        display: flex;
        justify-content: center;
        padding-right: 2rem;
+       padding-bottom: 2rem;
    }
 
    .musician__paragraph--note{
@@ -323,9 +328,52 @@
     }
 
     .bees{
-        min-height: 45rem;
-        max-height: 50rem;
+        min-height: 47rem;
+        max-height: 56rem;
     }
+
+    .text_paragraph{
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .musician__paragraph--title{
+        position: relative;
+        left: 4%;
+        text-align: left;
+        margin-right: 15%;
+        font-weight: 300;
+        font-size: 3rem;
+        padding-right: 10rem;
+    }
+
+    .musician__header{
+        padding-top: 2rem;
+        padding-left: 5rem;
+        font-size: 2rem;
+        font-weight: 600;
+
+    }
+
+    .footer{
+        padding-left: 5rem;
+    }
+
+    .footer__middle{
+        display: flex;
+        justify-content: left;
+        
+    }
+
+    .pearl__gregg{
+        padding-left: 3rem;
+    }
+
+    .carson__whyte{
+        padding-left: 3rem;
+    }
+
+    
 
 }
 
