@@ -15,42 +15,31 @@
 }
 *, *::before, *::before {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 @media screen and (min-width: 20rem) {
   .header {
-    display: flex;
-    align-items: center;
+    text-align: center;
     background-color: #323232;
     width: 100%;
     padding: 2rem;
   }
   .header__img {
     display: flex;
-    align-items: center;
-    width: 100%;
+    margin: 0 auto;
     height: 2.7rem;
     padding-bottom: 1rem;
     font-style: bold;
   }
 
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-
   .navbar__lists {
     display: flex;
+    justify-content: space-around;
     list-style: none;
   }
 
-  .navber__links {
-    display: flex;
-  }
-
-  .navbar__links a {
+  .navbar__clicks {
     font-family: "Avenir Next";
     font-size: 1.5rem;
     line-height: 1.357rem;
@@ -58,6 +47,10 @@
     display: flex;
     text-decoration: none;
     color: white;
+  }
+
+  .navbar__clicks:hover {
+    border: 2px white;
   }
 
   .bees {
@@ -79,7 +72,7 @@
   }
 
   .musician {
-    width: 60%;
+    width: 100%;
   }
 
   .musician__header {
@@ -96,10 +89,11 @@
   .musician__img {
     display: flex;
     padding-top: 0.5rem;
+    height: auto;
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 109%;
+    width: 100%;
   }
 
   .musician__paragraph--note {
@@ -118,13 +112,18 @@
     padding: 1rem;
   }
 
+  .photo__gallery {
+    padding: 1rem;
+    background-color: #e1e1e1;
+  }
+
   .photo__gallery--header {
     padding: 1rem;
   }
 
   .photo__gallery--dance {
     padding: 1rem;
-    width: 68%;
+    width: 100%;
   }
 
   .footer {
