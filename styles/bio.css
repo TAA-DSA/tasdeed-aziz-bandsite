@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/Alternativefiles/AvenirNextLTPro.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/Alternativefiles/AvenirNextLTProDemi.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/Alternativefiles/AvenirNextLTProBold.ttf");
+  font-weight: 700;
+}
+*, *::before, *::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 20rem) {
+  .header {
+    text-align: center;
+    background-color: #323232;
+    width: 100%;
+    padding: 2rem;
+  }
+  .header__img {
+    display: flex;
+    margin: 0 auto;
+    height: 2.7rem;
+    padding-bottom: 1rem;
+    font-style: bold;
+  }
+
+  .navbar__lists {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .navbar__clicks {
+    font-family: "Avenir Next";
+    font-size: 1.5rem;
+    line-height: 1.357rem;
+    font-weight: 600;
+    display: flex;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+  }
+
+  .navbar__clicks:hover {
+    font-weight: 700;
+    color: white;
+  }
+
+  .bees {
+    font-family: "Avenir Next";
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    min-height: 22rem;
+    max-height: 35rem;
+    background-image: url("../assets/images/hero-bio.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+
+  .musician {
+    background-color: #FAFAFA;
+    width: 100%;
+  }
+
+  .musician__header {
+    font-family: "Avenir Next";
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .musician__img {
+    display: flex;
+    padding-top: 0.5rem;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .musician__paragraph--note {
+    font-family: "Avenir Next";
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .musician__paragraph--title {
+    font-family: "Avenir Next";
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 700;
+    font-style: bold;
+    padding: 1rem;
+  }
+
+  .photo__gallery {
+    padding: 1rem;
+    background-color: #e1e1e1;
+  }
+
+  .photo__gallery--header {
+    padding: 1rem;
+  }
+
+  .photo__gallery--dance {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .footer {
+    font-family: "Avenir Next";
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: #323232;
+    color: white;
+    padding: 2rem;
+  }
+
+  .footer__icon {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer__header--company {
+    padding-bottom: 1rem;
+  }
+
+  .footer__header {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .footer__mangement {
+    padding-bottom: 1rem;
+  }
+
+  .footer__adams {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer__paragraph--email {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .pearl__gregg {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .pearl__gregg--artists {
+    padding-bottom: 0.5rem;
+  }
+
+  .pear__gregg--agent {
+    padding-top: 0.5rem;
+    font-weight: 300;
+  }
+
+  .carson__whyte--name {
+    padding-bottom: 0.5rem;
+  }
+
+  .carson__whyte--agent {
+    padding-top: 0.5rem;
+    font-weight: 300;
+  }
+
+  .footer__paragraph--why {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer__logo--img {
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #323232;
+    width: 100%;
+    padding: 2rem;
+  }
+  .header__img {
+    margin: 0;
+    height: 2rem;
+    padding-bottom: 1rem;
+    font-style: bold;
+  }
+
+  .navbar__clicks {
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .footer__header {
+    padding: 1rem;
+  }
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer__icon {
+    margin-left: 1rem;
+  }
+
+  .footer__mangement {
+    padding-bottom: 1rem;
+  }
+
+  .carson__whyte {
+    padding-top: 2.6rem;
+  }
+
+  .photo__music {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo__gallery--dance {
+    width: 30%;
+  }
+
+  .footer__logo {
+    position: relative;
+  }
+
+  .footer__logo--img {
+    position: relative;
+    bottom: 20rem;
+    left: 83%;
+  }
+
+  .text_paragraph {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .musician__paragraph--note {
+    padding-left: 6rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .musician__paragraph--title {
+    padding-left: 6rem;
+  }
+
+  .musician__img {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .bees {
+    height: 30rem;
+  }
+
+  .musician__paragraph--title {
+    font-size: 2rem;
+  }
+
+  .musician__quote {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .footer__logo--copyright {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header__img {
+    display: flex;
+    height: 2.7rem;
+    padding-bottom: 1rem;
+    font-style: bold;
+  }
+
+  .bees {
+    min-height: 47rem;
+    max-height: 56rem;
+  }
+
+  .text_paragraph {
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .musician__paragraph--title {
+    position: relative;
+    left: 4%;
+    text-align: left;
+    margin-right: 15%;
+    font-weight: 300;
+    font-size: 3rem;
+    padding-right: 10rem;
+  }
+
+  .musician__header {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .footer {
+    padding-left: 5rem;
+  }
+
+  .footer__middle {
+    display: flex;
+    justify-content: left;
+  }
+
+  .pearl__gregg {
+    padding-left: 3rem;
+  }
+
+  .carson__whyte {
+    padding-left: 3rem;
+  }
+}/*# sourceMappingURL=bio.css.map */
