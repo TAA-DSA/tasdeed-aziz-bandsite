@@ -66,6 +66,7 @@
 
 
            .musician{
+              background-color: #FAFAFA; 
               width:100%;
            }    
 
@@ -91,6 +92,7 @@
 
            .musician__paragraph--note{
                @include body-copy;
+               font-weight:500;
                display: flex;
                text-align: left;
                padding: 1rem;
@@ -98,6 +100,8 @@
 
             .musician__paragraph--title{
                 @include body-copy;
+                font-weight: 700;
+                font-style: bold;
                 padding: 1rem;
             }
 
@@ -176,9 +180,49 @@
 
 }
 
+@include tablet{
+    .header{
+        display: flex;
+        align-items: center;
+        background-color:#323232;
+        width:100%;
+        padding:2rem;
+
+        &__img{
+            margin: 0;
+            height: 2.7rem;
+            padding-bottom: 1rem;
+            font-style:bold;
+
+        }
 
 
+    }
 
+    .navbar__lists{
+        margin-right: 2rem;
+       
+        
+        
+
+       
+    }
+}
+
+@include desktop{
+    .header{
+              
+
+        &__img{
+            display: flex;
+            height: 2.7rem;
+            padding-bottom: 1rem;
+            font-style:bold;
+
+        }
+    }
+
+}
 
 
 
