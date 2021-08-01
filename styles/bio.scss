@@ -59,7 +59,7 @@
             max-height: 35rem;
             background-image: url('../assets/images/hero-bio.jpg');
             background-position: center;
-            opacity: 50%;
+            //opacity:0.5; 
             background-size: cover;
             color: white ;
     }
@@ -190,7 +190,7 @@
 
         &__img{
             margin: 0;
-            height: 2.7rem;
+            height: 2rem;
             padding-bottom: 1rem;
             font-style:bold;
 
@@ -200,8 +200,10 @@
     }
 
     .navbar__clicks{
+        padding-bottom: 1rem;
         margin-right: 2rem;
         font-weight: 300;
+        font-size: 1rem;
 
       
     }
@@ -297,6 +299,11 @@
    .musician__quote{
        font-size: 1rem;
        font-weight: 300;
+   }
+
+   .footer__logo--copyright{
+       font-size: 1rem;
+       padding-bottom: 2rem;
    }
 
    
