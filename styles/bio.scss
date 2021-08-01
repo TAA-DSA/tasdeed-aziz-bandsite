@@ -59,7 +59,7 @@
             max-height: 35rem;
             background-image: url('../assets/images/hero-bio.jpg');
             background-position: center;
-            opacity: 50% #323232;
+            opacity: 50%;
             background-size: cover;
             color: white ;
     }
@@ -204,6 +204,10 @@
       
     }
 
+    .footer__header{
+        padding: 1rem;
+    }
+
     .footer__content{
         display: flex;
         align-items: center;
@@ -243,6 +247,39 @@
             width:30%;
        
    }
+
+   .footer__logo{
+       position: relative;
+       
+   }
+
+   .footer__logo--img{
+       position: relative;
+       bottom: 20rem;
+       left: 83%;
+   }
+
+   .musician__paragraph--note{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .musician__paragraph--title{
+       padding-left: 6rem;
+   }
+
+   .musician__img{
+       display: flex;
+       margin: 0 auto;
+       width: 80%;
+   }
+
+   .bees{
+       height: 30rem;
+   }
+
+   
 }
 
 @include desktop{
@@ -256,6 +293,11 @@
             font-style:bold;
 
         }
+    }
+
+    .bees{
+        min-height: 45rem;
+        max-height: 50rem;
     }
 
 }
