@@ -1,0 +1,71 @@
+@use 'partials/mixins' as *;
+@use 'partials/variables' as *;
+@use 'partials/partial' as *;
+
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@include mobile{
+    .header{
+        text-align: center;
+        background-color: #323232;
+        width:100%;
+        padding:2rem;
+
+        &__img{
+            display: flex;
+            margin: 0 auto;
+            height: 2.7rem;
+            padding-bottom: 1rem;
+            font-style:bold;
+
+        }
+
+        .navbar__lists{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+    
+           
+        }
+    
+       
+        .navbar__clicks{
+            @include sub-header;
+            display: flex;
+            text-decoration: none;
+            font-weight: 300;
+            font-style: normal;
+            color: white;
+    
+        }
+    
+        .navbar__clicks:hover{
+            font-weight: 700;
+            color:white;
+        
+        }
+
+        
+    }
+
+    .shows__body{
+        display: flex;
+        padding: 2rem;
+        width: 100%;
+        min-height: 22rem;
+        max-height: 35rem;
+        background-image: url('../assets/Images-bandsit-2/hero-shows.jpg');
+        background-position: center;
+        background-size: cover;
+        color: white ;
+    }
+
+    .shows__queen{
+        padding-top: 1rem;
+    }
+}
