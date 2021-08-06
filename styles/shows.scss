@@ -68,4 +68,32 @@
     .shows__queen{
         padding-top: 1rem;
     }
+
+
+
+    .buy__ticket--btn{
+        // @include
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: black solid 0.25rem;
+        border-radius: 0.313rem;
+        background-color: black;
+        color: white;
+        width: 80%;
+
+
+   }
+
+    
+   .footer{
+    @include footer-copy;
+    padding: 1rem;
+    background-color: #323232;
+    color: white;
+    padding: 2rem;
+}
+
 }

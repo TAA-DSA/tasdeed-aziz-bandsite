@@ -68,4 +68,28 @@
   .shows__queen {
     padding-top: 1rem;
   }
+
+  .buy__ticket--btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: black solid 0.25rem;
+    border-radius: 0.313rem;
+    background-color: black;
+    color: white;
+    width: 80%;
+  }
+
+  .footer {
+    font-family: "Avenir Next";
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: #323232;
+    color: white;
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=shows.css.map */
