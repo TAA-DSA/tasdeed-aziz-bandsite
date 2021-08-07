@@ -196,18 +196,87 @@
                 padding-bottom: 1rem;
             }
 
-            .name__division{
+            .comment__data{
                 padding: 2rem;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            
+            .user__img{
+                position: relative;
+                top: 22%;
+                left:44%;
+                width: 2.75rem; 
+                height: 2.75rem;
+                border-radius: 50%;
+            }
+
+            .comment__header{
+                padding: 1rem;
+            }
+
+            .name__division{
+                display: flex;
                 
+                              
+            }
+
+            .buy__ticket--btn{
+                @include footer-copy;
+                position: relative;
+                top:80%;
+                left:80%;
+                padding-top: 0.50rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                padding-bottom: 0.50rem;
+                border-radius: 4px;
+                margin-top:2rem;
+                margin-bottom: 2rem;
+                border: #e1e1e1 0.25rem;
+                background-color: black;
+                color: white;
+                font-size: 0.83rem;
+
+            }
+
+            .comment__data input{
+                width:250%;
+                height: 2.50rem;
+                padding: 0.50rem;
+                margin-bottom: 0.25rem;
+                border: #e1e1e1 solid 0.25rem;
+                border-radius:0.25rem ;
                 
             }
 
-            .user__img{
-                width: 30%;
-                border-radius: 50%;
+            .comment__data textarea{
+                width: 250%;
+                height: 4.5rem;
+                margin-bottom: 0.25rem;
+                border: #e1e1e1 solid 0.25rem;
+                border-radius:0.25rem ;
             }
+
+            .comment__forms{
+                padding: 2rem;
+            }
+
+           #comment__field{
+               display: flex;
+           }
+
+           .comment__data label{
+               padding-bottom: 0.25rem;
+               color: #e1e1e1;
+           }
+
+
+
+
+            
 
 
 }
@@ -339,6 +408,28 @@
        padding-bottom: 2rem;
    }
 
+   .comment__data input{
+    width:340%;
+    
+}
+
+   .comment__data textarea{
+     width: 340%;
+    
+}
+
+   .buy__ticket--btn{
+       left:197%;
+   }
+
+   .user__img{
+    top: 20%;
+    left:41%;
+    width: 3.75rem;
+    height: 3.75rem;
+    
+}
+
    
 }
 
@@ -400,6 +491,39 @@
     .carson__whyte{
         padding-left: 3rem;
     }
+
+    
+
+    
+    
+    .comment__data input{
+        width:200%;
+        
+    }
+    
+       .comment__data textarea{
+         width: 200%;
+        
+    }
+
+    .comment__forms{
+        padding-left: 30rem;
+        
+    }
+
+    .buy__ticket--btn{
+        left:10%;
+    }
+
+    .user__img{
+        top: 19%;
+        left:30%;
+        width: 3.75rem;
+        height: 3.75rem;
+        
+    }
+
+   
 
     
 
