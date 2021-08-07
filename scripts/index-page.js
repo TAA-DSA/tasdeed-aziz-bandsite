@@ -1,9 +1,11 @@
 //Script Test//
 console.log("Hello to bandSite");
 
-const subForm = document.querySelector('#comment__field');
+//initiating Eventlistner;
 
-subForm.addEventListener('submit',function(event){
+const comForm = document.querySelector('#comment__field');
+
+comForm.addEventListener('submit',function(event){
     event.preventDefault();
 
     const user_name = event.target.name.value;
