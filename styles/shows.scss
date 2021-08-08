@@ -91,13 +91,12 @@
         color: white;
         width: 80%;
         
-
    }
 
    .ticket__box{
-     border-bottom: 0.5rem solid #e1e1e1;
-     
-   }
+    border-bottom: 0.5rem solid #e1e1e1;
+    
+  }
 
    //add table//
 
@@ -267,10 +266,7 @@
     }
 
    
-
-   
-
-   .footer__logo{
+    .footer__logo{
        position: relative;
        
    }
@@ -281,31 +277,12 @@
        left: 83%;
    }
 
-   
-
-   
-
-
-   
-  
-
-   
-   
-
-   .footer__logo--copyright{
+     .footer__logo--copyright{
        font-size: 1rem;
        padding-bottom: 2rem;
    }
 
   
-
-   
-
-  
-
-   
-
-   
 }
 
 @include desktop{
@@ -341,14 +318,4 @@
     }
 
     
-
-    
-   
-    
-    
-
-   
-
-    
-
 }

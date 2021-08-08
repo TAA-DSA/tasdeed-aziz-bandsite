@@ -1,7 +1,7 @@
 //Script Test//
 console.log("Hello to bandSite");
 
-//initiating Eventlistner;
+//initiating Eventlistner//
 
 const comForm = document.querySelector('#comment__field');
 
@@ -13,6 +13,12 @@ comForm.addEventListener('submit',function(event){
 
     const comment_entry = event.target.sentiments.value;
     console.log(comment_entry);
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('review');
+    console.log(user_name);
+    document.body.appendChild(newDiv);
+
 
     
 })
