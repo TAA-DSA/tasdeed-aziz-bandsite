@@ -221,7 +221,7 @@
                               
             }
 
-            .buy__ticket--btn{
+            #comment__btn{
                 @include footer-copy;
                 position: relative;
                 top:80%;
@@ -281,7 +281,16 @@
             margin-bottom: 2rem;   
             color: #e1e1e1;
             font-size: 1.5rem;
-            // border-bottom: 0.5rem solid #e1e1e1;
+            
+           }
+
+           .review{
+               padding:2rem;
+               display: flex;
+               justify-content: center;
+               width: 100%;
+               height: 2rem;
+               border-bottom: 0.5rem solid #e1e1e1;
            }
 
            
