@@ -57,7 +57,7 @@
     display: flex;
     padding: 2rem;
     width: 100%;
-    min-height: 22rem;
+    min-height: 32rem;
     max-height: 35rem;
     background-image: url("../assets/Images-bandsit-2/hero-shows.jpg");
     background-position: center;
@@ -66,20 +66,59 @@
   }
 
   .shows__queen {
+    padding-top: 4rem;
+    font-size: 4rem;
+  }
+
+  .shows__album {
     padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
   }
 
   .buy__ticket--btn {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
     font-size: 1.5rem;
+    height: 4rem;
     padding: 0.5rem;
+    margin-bottom: 1rem;
     border: black solid 0.25rem;
     border-radius: 0.313rem;
     background-color: black;
     color: white;
     width: 80%;
+  }
+
+  .ticket__box {
+    border-bottom: 0.5rem solid #e1e1e1;
+  }
+
+  .ticket__table {
+    padding: 4rem;
+  }
+
+  .ticket__header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+  }
+
+  .ticket__table--dates {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #e1e1e1;
+    font-size: 2rem;
+  }
+
+  .ticket__table--schedule {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .ticket__table--address {
+    font-size: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .footer {
@@ -91,5 +130,156 @@
     background-color: #323232;
     color: white;
     padding: 2rem;
+  }
+
+  .footer__icon {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer__header--company {
+    padding-bottom: 1rem;
+  }
+
+  .footer__header {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .footer__mangement {
+    padding-bottom: 1rem;
+  }
+
+  .footer__adams {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer__paragraph--email {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .pearl__gregg {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .pearl__gregg--artists {
+    padding-bottom: 0.5rem;
+  }
+
+  .pear__gregg--agent {
+    padding-top: 0.5rem;
+    font-weight: 300;
+  }
+
+  .carson__whyte--name {
+    padding-bottom: 0.5rem;
+  }
+
+  .carson__whyte--agent {
+    padding-top: 0.5rem;
+    font-weight: 300;
+  }
+
+  .footer__paragraph--why {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer__logo--img {
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #323232;
+    width: 100%;
+    padding: 2rem;
+  }
+  .header__img {
+    margin: 0;
+    height: 2rem;
+    padding-bottom: 1rem;
+    font-style: bold;
+  }
+
+  .navbar__clicks {
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .footer__header {
+    padding: 1rem;
+  }
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer__icon {
+    margin-left: 1rem;
+  }
+
+  .footer__mangement {
+    padding-bottom: 1rem;
+  }
+
+  .carson__whyte {
+    padding-top: 2.6rem;
+  }
+
+  .footer__logo {
+    position: relative;
+  }
+
+  .footer__logo--img {
+    position: relative;
+    bottom: 20rem;
+    left: 83%;
+  }
+
+  .footer__logo--copyright {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header__img {
+    display: flex;
+    height: 2.7rem;
+    padding-bottom: 1rem;
+    font-style: bold;
+  }
+
+  .footer {
+    padding-left: 5rem;
+  }
+
+  .footer__middle {
+    display: flex;
+    justify-content: left;
+  }
+
+  .pearl__gregg {
+    padding-left: 3rem;
+  }
+
+  .carson__whyte {
+    padding-left: 3rem;
   }
 }/*# sourceMappingURL=shows.css.map */
