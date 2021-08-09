@@ -104,5 +104,7 @@ comForm.addEventListener('click',function(event){
    const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear()
    pTime.innerText = date;
 
+   document.getElementById("comment__field").reset();
+
   
 })
