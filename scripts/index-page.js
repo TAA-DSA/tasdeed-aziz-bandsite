@@ -49,6 +49,13 @@ comForm.addEventListener('click',function(event){
    const comment_entry = document.getElementById('sentiments').value; 
    hName.innerText = user_name;
    pText.innerText = comment_entry;
+
+   const getDate = new Date();
+   const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear()
+   pTime.innerText = date;
+
+
+
    
 
 
@@ -63,10 +70,7 @@ comForm.addEventListener('click',function(event){
     
    
 
-    // const imgPlaceholder = document.createElement("div");
-    // imgPlaceholder.classList.add("image_placeholder");
-    // test.appendChild(imgPlaceholder);
-
+    
     
 
     
