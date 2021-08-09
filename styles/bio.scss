@@ -224,6 +224,7 @@
             #comment__btn{
                 @include footer-copy;
                 position: relative;
+                width: 100%;
                 top:80%;
                 left:67%;
                 padding-top: 0.50rem;
@@ -258,8 +259,6 @@
             }
 
             .comment__forms{
-                // display: flex;
-                // justify-content: center;
                 padding: 2rem;
                 margin-bottom: 2rem;
                 border-bottom: 0.5rem solid #e1e1e1;
@@ -284,15 +283,42 @@
             
            }
 
-           .review{
-               padding:2rem;
-               display: flex;
-               justify-content: center;
-               width: 100%;
-               height: 2rem;
-               border-bottom: 0.5rem solid #e1e1e1;
-           }
+                
+        .image_placeholder{
+            position: relative;
+            right: 15%;
+            background:url('not_found.jpg') no-repeat;
+            width: 2.75rem; 
+            height: 2.75rem;
+            border-radius: 50%;
+            background-color: #e1e1e1;
+        }
 
+        .review__cornor{
+            padding-top: 1rem;
+            padding-left: 5rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        .user__comments{
+            position: relative;
+            top: -14%;
+            right: 6%;
+            padding: 2rem;
+            border-bottom:0.25rem solid #e1e1e1;
+        }
+
+        .date{
+            position:relative;
+            right:180%;
+            color: #e1e1e1;
+        }
+
+           
            
 
 

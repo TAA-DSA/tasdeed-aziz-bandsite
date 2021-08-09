@@ -121,6 +121,12 @@
     padding-bottom: 1.5rem;
   }
 
+  .day__time{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
   .footer {
     font-family: "Avenir Next";
     font-size: 0.813rem;
