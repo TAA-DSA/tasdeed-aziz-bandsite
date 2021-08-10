@@ -21,7 +21,7 @@ const shows = ['Mon Sept 06 2021', 'Ronald lane', 'San Francisco, CA'];
 const parentDiv = document.querySelector('.new__table')
 
 const tableTag = document.createElement('table');
-tableTag.classList.add("newtable__ticket");
+tableTag.setAttribute('id',"newtable__ticket");
 parentDiv.appendChild(tableTag);
 
 const column = document.createElement('tr');
@@ -47,8 +47,14 @@ column.appendChild(columnThree);
 columnThree.innerHTML = "Location";
 
 
-var tbl = document.getElementsByClassName('newtable__ticket');
-alert(tbl);
+for (let i = 0; i <shows.length; i++){
+    const tbl = document.getElementsByClassName('newtable__ticket');
+    const firstRow = tbl.insertRow();
+    const cell = row.insertCell();
+    cell.innerHTML = 'text'
+}
+
+
 
 
 

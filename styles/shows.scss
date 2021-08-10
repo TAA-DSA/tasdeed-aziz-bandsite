@@ -288,16 +288,21 @@
    }
 
    .ticket__table{
-       display: none;
-
+      display: block;
 
    }
 
    .new__table{
-       display: block;
+       display: none;
+
    }
 
+   .review__cornor{
+       padding-left:30rem;
+       padding-right:17rem;
+   }
 
+  
 
    
 

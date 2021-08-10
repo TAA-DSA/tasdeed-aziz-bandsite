@@ -264,32 +264,11 @@
   }
 
   .ticket__table {
-    display: none;
+    display: block;
   }
 
   .new__table {
-    display: block;
-    padding: 4rem;
-  }
-
-  .new__table h1{
-    padding-bottom: 2rem;
-  }
-
-  .newtable__ticket{
-    display: flex;
-    justify-content: center;
-    padding-right: 2rem;
-    font-size: 2rem;
-  }
-
-  .table__col--one{
-    padding-right: 2rem;
-
-  }
-
-  .table__col--two{
-    padding-right: 2rem;
+    display: none;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -325,4 +304,5 @@
   .sound__cloud {
     padding-left: 5rem;
   }
+  
 }/*# sourceMappingURL=shows.css.map */

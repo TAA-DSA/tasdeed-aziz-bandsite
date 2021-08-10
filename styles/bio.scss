@@ -261,7 +261,7 @@
             .comment__forms{
                 padding: 2rem;
                 margin-bottom: 2rem;
-                border-bottom: 0.5rem solid #e1e1e1;
+                // border-bottom: 0.5rem solid #e1e1e1;
             }
 
            #comment__field{
@@ -568,6 +568,27 @@
         width: 3.75rem;
         height: 3.75rem;
         
+    }
+
+    .review__cornor{
+        padding-left: 31rem;
+        padding-right: 10rem;
+        font-size: 1.5rem;
+        
+        
+    }
+
+    .image_placeholder{
+        position: relative;
+        right: 46%;
+        width: 4rem; 
+        height: 4rem;
+        border-radius: 50%;
+        background-color: #e1e1e1;
+    }
+
+    .comment__data input{
+        width: 248%;
     }
 
    
