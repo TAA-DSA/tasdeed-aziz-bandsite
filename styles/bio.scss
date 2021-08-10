@@ -287,9 +287,8 @@
         .image_placeholder{
             position: relative;
             right: 15%;
-            background:url('not_found.jpg') no-repeat;
-            width: 2.75rem; 
-            height: 2.75rem;
+            width: 1.75rem; 
+            height: 1.75rem;
             border-radius: 50%;
             background-color: #e1e1e1;
         }
@@ -297,7 +296,8 @@
         .review__cornor{
             padding-top: 1rem;
             padding-left: 5rem;
-            padding-right: 2rem;
+            padding-right: 5rem;
+            font-weight: 500;
             margin: 0 auto;
             display: flex;
             justify-content: center;

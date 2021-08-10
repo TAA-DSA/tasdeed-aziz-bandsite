@@ -66,8 +66,10 @@
     }
 
     .shows__queen{
+        // @include sub-header;
+        padding-bottom: 2rem;
         padding-top: 4rem;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .shows__album{
@@ -202,6 +204,9 @@
 .footer__logo--img{
     padding-bottom: 1rem;
 }
+.new__table{
+    display: none;
+}
 }
 
 @include tablet{
@@ -282,8 +287,26 @@
        padding-bottom: 2rem;
    }
 
+   .ticket__table{
+       display: none;
+
+
+   }
+
+   .new__table{
+       display: block;
+   }
+
+
+
+   
+
+
+
   
 }
+
+
 
 @include desktop{
     .header{
@@ -315,6 +338,17 @@
 
     .carson__whyte{
         padding-left: 3rem;
+    }
+
+    .shows__all{
+        display: flex;
+        align-items: center;
+      
+       
+    }
+ 
+    .sound__cloud{
+        padding-left: 5rem;
     }
 
     

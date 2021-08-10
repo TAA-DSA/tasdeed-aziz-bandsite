@@ -66,8 +66,9 @@
   }
 
   .shows__queen {
+    padding-bottom: 2rem;
     padding-top: 4rem;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .shows__album {
@@ -119,12 +120,6 @@
     font-size: 700;
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .day__time{
-    display: flex;
-    justify-content: flex-end;
-
   }
 
   .footer {
@@ -196,6 +191,10 @@
   .footer__logo--img {
     padding-bottom: 1rem;
   }
+
+  .new__table {
+    display: none;
+  }
 }
 @media screen and (min-width: 48rem) {
   .header {
@@ -263,6 +262,35 @@
     font-size: 1rem;
     padding-bottom: 2rem;
   }
+
+  .ticket__table {
+    display: none;
+  }
+
+  .new__table {
+    display: block;
+    padding: 4rem;
+  }
+
+  .new__table h1{
+    padding-bottom: 2rem;
+  }
+
+  .newtable__ticket{
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    font-size: 2rem;
+  }
+
+  .table__col--one{
+    padding-right: 2rem;
+
+  }
+
+  .table__col--two{
+    padding-right: 2rem;
+  }
 }
 @media screen and (min-width: 80rem) {
   .header__img {
@@ -287,5 +315,14 @@
 
   .carson__whyte {
     padding-left: 3rem;
+  }
+
+  .shows__all {
+    display: flex;
+    align-items: center;
+  }
+
+  .sound__cloud {
+    padding-left: 5rem;
   }
 }/*# sourceMappingURL=shows.css.map */
