@@ -288,19 +288,40 @@
    }
 
    .ticket__table{
-      display: block;
+      display: none;
 
    }
 
    .new__table{
-       display: none;
+       display: block;
+       padding: 4rem;
 
    }
+
+   .table__col{
+      font-size: 2rem;
+   }
+
+   .new__table h1{
+       padding-bottom: 4rem;
+       font-size:3rem;
+   }
+
+
 
    .review__cornor{
        padding-left:30rem;
        padding-right:17rem;
    }
+    
+   .table__col--one{
+       padding-right: 2rem;
+   }
+
+   .table__col--two{
+    padding-right: 2rem;
+}
+
 
   
 
