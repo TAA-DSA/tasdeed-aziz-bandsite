@@ -201,6 +201,124 @@
   .footer__logo--img {
     padding-bottom: 1rem;
   }
+
+  .comment__data {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .user__img {
+    position: relative;
+    top: 22%;
+    left: 44%;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+  }
+
+  .comment__header {
+    padding: 1rem;
+  }
+
+  .name__division {
+    display: flex;
+  }
+
+  #comment__btn {
+    font-family: "Avenir Next";
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    top: 80%;
+    left: 67%;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: #e1e1e1 0.25rem;
+    background-color: black;
+    color: white;
+    font-size: 0.83rem;
+  }
+
+  .comment__data input {
+    width: 250%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    border: #e1e1e1 solid 0.25rem;
+    border-radius: 0.25rem;
+  }
+
+  #sentiments {
+    width: 250%;
+    height: 5rem;
+    border: #e1e1e1 solid 0.25rem;
+    border-radius: 0.25rem;
+  }
+
+  .comment__forms {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #comment__field {
+    display: flex;
+  }
+
+  .comment__data label {
+    padding-bottom: 0.25rem;
+    color: #e1e1e1;
+  }
+
+  .review__input {
+    position: relative;
+    padding: 4rem;
+    left: 6%;
+    margin-bottom: 2rem;
+    color: #e1e1e1;
+    font-size: 1.5rem;
+  }
+
+  .image_placeholder {
+    position: relative;
+    right: 15%;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+  }
+
+  .review__cornor {
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-weight: 500;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user__comments {
+    position: relative;
+    top: -14%;
+    right: 6%;
+    padding: 2rem;
+    border-bottom: 0.25rem solid #e1e1e1;
+  }
+
+  .date {
+    position: relative;
+    right: 180%;
+    color: #e1e1e1;
+  }
 }
 @media screen and (min-width: 48rem) {
   .header {
@@ -315,6 +433,25 @@
     font-size: 1rem;
     padding-bottom: 2rem;
   }
+
+  .comment__data input {
+    width: 340%;
+  }
+
+  .comment__data textarea {
+    width: 340%;
+  }
+
+  .buy__ticket--btn {
+    left: 197%;
+  }
+
+  .user__img {
+    top: 20%;
+    left: 41%;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 @media screen and (min-width: 80rem) {
   .header__img {
@@ -366,5 +503,47 @@
 
   .carson__whyte {
     padding-left: 3rem;
+  }
+
+  .comment__data input {
+    width: 200%;
+  }
+
+  .comment__data textarea {
+    width: 200%;
+  }
+
+  .comment__forms {
+    padding-left: 30rem;
+  }
+
+  .buy__ticket--btn {
+    left: 10%;
+  }
+
+  .user__img {
+    top: 19%;
+    left: 30%;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .review__cornor {
+    padding-left: 31rem;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+  }
+
+  .image_placeholder {
+    position: relative;
+    right: 46%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+  }
+
+  .comment__data input {
+    width: 248%;
   }
 }/*# sourceMappingURL=bio.css.map */
