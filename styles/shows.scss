@@ -302,6 +302,50 @@
        padding-right:17rem;
    }
 
+   .buy__ticket--btn{
+     text-align: center;
+     width: 100%;
+     position: relative;
+     top:40%;
+     left:15%;
+     font-weight: 700;
+     font-size: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     padding-top: 0.4rem;
+     padding-bottom: 0.3rem;
+     
+        
+    
+}
+    .ticket__box{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .ticket__table--schedule{
+        display: flex;
+        font-weight: 600;
+        font-size: 1.2rem;
+    } 
+
+    .ticket__table--dates{
+        display: inline-block;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+    }
+
+    .ticket__table--address{
+        display:flex;
+        font-size: 1.2rem;
+    }
+    
+    
+
+    
+
   
 
    
