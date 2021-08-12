@@ -1,4 +1,4 @@
-//Script//
+//Script Test//
 console.log("Let the show begin!!")
 
 const shows = ['Mon Sept 06 2021', 'Ronald lane', 'San Francisco, CA'];
@@ -18,41 +18,114 @@ const shows = ['Mon Sept 06 2021', 'Ronald lane', 'San Francisco, CA'];
 //  ]
 
 
-const parentDiv = document.querySelector('.new__table')
+const parentDiv = document.querySelector('.ticketTable__js');
 
-const tableTag = document.createElement('table');
-tableTag.setAttribute('id',"newtable__ticket");
-parentDiv.appendChild(tableTag);
+const title = document.createElement('h1');
+title.classList.add("ticket__header");
+parentDiv.appendChild(title);
 
-const column = document.createElement('tr');
-column.classList.add('table__col');
-tableTag.appendChild(column);
+title.innerHTML = "Shows";
 
-const columnOne = document.createElement('td');
-columnOne.classList.add('table__col--one');
-column.appendChild(columnOne);
+for(let i = 0; i <6; i++){
 
-columnOne.innerHTML = 'Dates';
+    const divMain = document.createElement('div');
+    divMain.classList.add("ticket__box");
+    parentDiv.appendChild(divMain);
 
-const columnTwo = document.createElement('td');
-columnTwo.classList.add('table__col--two');
-column.appendChild(columnTwo);
+    for( let i= 0; i<3; i++){
 
-columnTwo.innerHTML = "Venue"
+        let header = ['Dates','Venue', 'Location'];
 
-const columnThree = document.createElement('td');
-columnThree.classList.add('table__col--three');
-column.appendChild(columnThree);
+        const divOne = document.createElement('div');
+        divMain.appendChild(divOne);
+        
+        const divDate = document.createElement('h2');
+        divDate.classList.add('ticket__table--dates');
+        divOne.appendChild(divDate);
 
-columnThree.innerHTML = "Location";
+        divDate.innerHTML = header[i];
+
+        const divSchedule = document.createElement('p')
+        divSchedule.classList.add('tables__table--schedule');
+        divOne.appendChild(divSchedule);
+
+    
+
+        
+
+        
+    }
+
+        const ticketBtn = document.createElement('button');
+        ticketBtn.setAttribute('id','buy__ticket--btn');
+        divMain.appendChild(ticketBtn);
+        
+        ticketBtn.innerHTML = 'Buy Ticket';
+
+       
 
 
-for (let i = 0; i <shows.length; i++){
-    const tbl = document.getElementsByClassName('newtable__ticket');
-    const firstRow = tbl.insertRow();
-    const cell = row.insertCell();
-    cell.innerHTML = 'text'
+    
+    
+
+    // const divTwo = document.createElement('div');
+    // divMain.appendChild(divTwo);
+
+    // const divThree = document.createElement('div');
+    // divMain.appendChild(divThree);
+
+    // const divFour = document.createElement('div');
+    // divMain.appendChild(divFour);
+
+
+    // const divDate = document.createElement('h2');
+    // divDate.classList.add('ticket__table--dates');
+    // divOne.appendChild(divDate);
+
+    // const divDateOne = document.createElement('h2');
+    // divDateOne.classList.add('ticket__table--dates');
+    // divTwo.appendChild(divDateOne);
+
+    
+    // const divSchedule = document.createElement('p')
+    // divSchedule.classList.add('tables__table--schedule');
+    // divOne.appendChild(divSchedule);
+
+
+
 }
+
+
+
+
+// const column = document.createElement('tr');
+// column.classList.add('table__col');
+// tableTag.appendChild(column);
+
+// const columnOne = document.createElement('td');
+// columnOne.classList.add('table__col--one');
+// column.appendChild(columnOne);
+
+
+
+// const columnTwo = document.createElement('td');
+// columnTwo.classList.add('table__col--two');
+// column.appendChild(columnTwo);
+
+
+
+// const columnThree = document.createElement('td');
+// columnThree.classList.add('table__col--three');
+// column.appendChild(columnThree);
+
+
+
+// for (let i = 0; i <shows.length; i++){
+//     const tbl = document.getElementsByClassName('newtable__ticket');
+//     const firstRow = tbl.insertRow();
+//     // const cell = row.insertCell();
+//     // cell.innerHTML = 'text'
+// }
 
 
 

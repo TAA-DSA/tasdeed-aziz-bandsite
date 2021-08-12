@@ -192,7 +192,7 @@
     padding-bottom: 1rem;
   }
 
-  .new__table {
+  .ticketTable__js {
     display: none;
   }
 }
@@ -264,10 +264,6 @@
   }
 
   .ticket__table {
-    display: block;
-  }
-
-  .new__table {
     display: none;
   }
 
@@ -276,7 +272,7 @@
     padding-right: 17rem;
   }
 
-  .buy__ticket--btn {
+  #buy__ticket--btn {
     text-align: center;
     width: 100%;
     position: relative;
@@ -288,6 +284,8 @@
     padding-right: 1rem;
     padding-top: 0.4rem;
     padding-bottom: 0.3rem;
+    background-color: black;
+    color: white;
   }
 
   .ticket__box {
@@ -312,6 +310,11 @@
   .ticket__table--address {
     display: flex;
     font-size: 1.2rem;
+  }
+
+  .ticketTable__js {
+    display: block;
+    padding: 4rem;
   }
 }
 @media screen and (min-width: 80rem) {
