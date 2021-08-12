@@ -64,11 +64,11 @@ parentDiv.appendChild(conlst);
     divMain.appendChild(listDates);
 
     const listVenue = document.createElement('li');
-    listVenue.classList.add("ticket__table--schedule");
+    listVenue.classList.add("ticket__table--address");
     divMain.appendChild(listVenue);
 
     const listLocation = document.createElement('li');
-    listLocation.classList.add("ticket__table--schedule");
+    listLocation.classList.add("ticket__table--address");
     divMain.appendChild(listLocation);
 
         
