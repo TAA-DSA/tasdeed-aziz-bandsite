@@ -192,7 +192,7 @@
     padding-bottom: 1rem;
   }
 
-  .ticketTable__js {
+  #ticketTable__js {
     display: none;
   }
 }
@@ -274,10 +274,10 @@
 
   #buy__ticket--btn {
     text-align: center;
-    width: 100%;
+    width: 15%;
     position: relative;
     top: 40%;
-    left: 15%;
+    left: 2%;
     font-weight: 700;
     font-size: 1rem;
     padding-left: 1rem;
@@ -293,12 +293,15 @@
     justify-content: space-evenly;
     font-size: 0.5rem;
     padding-bottom: 1.5rem;
+    border-bottom: 0.5rem solid #e1e1e1;
   }
 
   .ticket__table--schedule {
-    display: flex;
+    display: inline-block;
+    justify-content: space-evenly;
     font-weight: 600;
     font-size: 1.2rem;
+    text-decoration: none;
   }
 
   .ticket__table--dates {
@@ -312,7 +315,7 @@
     font-size: 1.2rem;
   }
 
-  .ticketTable__js {
+  #ticketTable__js {
     display: block;
     padding: 4rem;
   }

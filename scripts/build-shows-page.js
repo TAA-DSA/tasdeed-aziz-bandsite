@@ -1,6 +1,9 @@
 //Script Test//
 console.log("Let the show begin!!")
 
+//get the section id
+const parentDiv = document.getElementById('ticketTable__js');
+
 //concert Array
 
  const concertList = [
@@ -22,7 +25,7 @@ console.log("Let the show begin!!")
         venue:'Hyatt Agency', 
         location: 'San Francisco, CA'
     },
-    { date:'Fri Nov  26 2021', 
+    {   date:'Fri Nov  26 2021', 
         venue:'Moscow Center',
         location: 'San Francisco, CA'
     },
@@ -35,44 +38,84 @@ console.log("Let the show begin!!")
  console.log(concertList);
 
 
-const parentDiv = document.querySelector('.ticketTable__js');
-
 const title = document.createElement('h1');
 title.classList.add("ticket__header");
 parentDiv.appendChild(title);
 
 title.innerHTML = "Shows";
 
-for(let i = 0; i <concertList.length; i++){
+//Create a unordered list item
+const conlst = document.createElement('ul');
 
+console.log(conlst);
+conlst.classList.add('lst');
+parentDiv.appendChild(conlst);
+
+
+ for(let i = 0; i <concertList.length; i++){
+
+    
     const divMain = document.createElement('div');
     divMain.classList.add("ticket__box");
     parentDiv.appendChild(divMain);
-
-        
-    const divOne = document.createElement('div');
-    divMain.appendChild(divOne);
     
-    const divDate = document.createElement('h2');
-    divDate.classList.add('ticket__table--dates');
-    divOne.appendChild(divDate);
+    const listDates = document.createElement('li');
+    listDates.classList.add("ticket__table--schedule");
+    divMain.appendChild(listDates);
 
-    divDate.innerHTML = 'Dates';
+    const listVenue = document.createElement('li');
+    listVenue.classList.add("ticket__table--schedule");
+    divMain.appendChild(listVenue);
 
-    const divSchedule = document.createElement('p')
-    divSchedule.classList.add('tables__table--schedule');
-    divOne.appendChild(divSchedule);
+    const listLocation = document.createElement('li');
+    listLocation.classList.add("ticket__table--schedule");
+    divMain.appendChild(listLocation);
 
-    divSchedule.innerHTML = concertList[i].date;
-
-    // const ticketBtn = document.createElement('button');
-    // ticketBtn.setAttribute('id','buy__ticket--btn');
-    // divMain.appendChild(ticketBtn);
         
-    // ticketBtn.innerHTML = 'Buy Ticket';
+    listDates.innerHTML = concertList[i].date;
+    listVenue.innerHTML = concertList[i].venue;
+    listLocation.innerHTML = concertList[i].location;
+
+
+    const ticketBtn = document.createElement('button');
+    ticketBtn.setAttribute('id','buy__ticket--btn');
+    divMain.appendChild(ticketBtn);
+        
+    ticketBtn.innerHTML = 'Buy Ticket';
+
+
+
+
 
        
-}
+
+        
+//     const divOne = document.createElement('div');
+//     divMain.appendChild(divOne);
+    
+      
+//     // let headers = ["DATES", "VENUE","LOCATION"];
+
+//     const divDate = document.createElement('h2');
+//     divDate.classList.add('ticket__table--dates');
+//     divOne.appendChild(divDate);
+    
+//     divDate.innerHTML = "DATES";
+    
+//     const divSchedule = document.createElement('p')
+//     divSchedule.classList.add('tables__table--schedule');
+//     divOne.appendChild(divSchedule);
+
+//     divSchedule.innerHTML = concertList[i].date;
+
+    
+
+
+
+
+
+       
+ }
 
 
 
