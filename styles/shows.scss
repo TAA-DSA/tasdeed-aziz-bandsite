@@ -234,7 +234,6 @@
         font-weight: 300;
         font-size: 1rem;
 
-      
     }
 
     .footer__header{
@@ -299,9 +298,9 @@
 
    #buy__ticket--btn{
      text-align: center;
-     width: 15%;
+     width: 100%;
      position: relative;
-     top:40%;
+     
      left:2%;
      font-weight: 700;
      font-size: 1rem;
@@ -315,36 +314,45 @@
         
     
 }
-    .ticket__box{
-        display: flex;
+    .ticket__box {
+        display:flex;
         justify-content: space-evenly;
+        text-align: center;
         font-size: 0.5rem;
         padding-bottom: 1.5rem;
-        border-bottom: 0.5rem solid #e1e1e1;;
+        border-bottom: 0.25rem solid #e1e1e1;
     }
 
+     
+
     .ticket__table--schedule{
-        display: inline-block;
-        justify-content: space-evenly;
+        display: flex;
+        list-style: none;
         font-weight: 600;
         font-size: 1.2rem;
-        text-decoration: none;
+        
     } 
 
     .ticket__table--dates{
         display: inline-block;
-        justify-content: space-evenly;
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 10rem;
+        justify-content: space-between;
         font-size: 1.2rem;
     }
 
     .ticket__table--address{
-        display:flex;
+        
+        list-style: none;
         font-size: 1.2rem;
+        
     }
 
     #ticketTable__js{
         display:block;
         padding:4rem;
+    
     }
 
     
