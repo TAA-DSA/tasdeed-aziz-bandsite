@@ -1,6 +1,16 @@
 //Code works fine, something wrong with the CSS so comment should be of same length as the defined otherwise the display
 // is not as  mock up.
 
+//Api key
+const apiKey = "108867b9-722a-4592-b22c-6a1000131f86"
+
+//Api check
+axios.get('https://project-1-api.herokuapp.com/?api_key=108867b9-722a-4592-b22c-6a1000131f86').then(response =>{
+    const result = respose.data
+    console.log(result);
+})
+
+
 const comForm = document.querySelector('#comment__btn');
 
 const parentDiv = document.querySelector('.review__container');
