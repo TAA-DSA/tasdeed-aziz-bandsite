@@ -298,30 +298,50 @@
 
    }
 
-   .table__col{
-      font-size: 2rem;
+   .table__data{
+       display: flex;
+       justify-content: space-around;
+       border-bottom:0.25rem solid #e1e1e1 ;
    }
 
+   .table__data li{
+      display: flex;
+      list-style: none;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+   }
+   
+   
    .new__table h1{
        padding-bottom: 4rem;
        font-size:3rem;
    }
-
-
 
    .review__cornor{
        padding-left:30rem;
        padding-right:17rem;
    }
     
-   .table__col--one{
-       padding-right: 2rem;
+   .table__header{
+       color: #e1e1e1;
+       padding-bottom: 1rem;
+       font-size: 1rem;
+       
    }
 
-   .table__col--two{
-    padding-right: 2rem;
-}
+   #btn{
+       width: 53%;
+       height: 2rem;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       margin-left: 4rem;
+       margin-right: 2rem;  
+       padding: 0.5rem;
+       background-color: black;
+       color:white;
+   }
 
+   
 
   
 

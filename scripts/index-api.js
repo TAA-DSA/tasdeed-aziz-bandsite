@@ -59,7 +59,7 @@ axios.get(urlKey).then(response =>{
         const postTimeStamp = commentData[i].timestamp
         //console.log(postTimeStamp);
         const getPostDate = new Date(postTimeStamp);
-        //console.log(getPostDate);
+        // console.log(getPostDate);
        const postDateFormat = (getPostDate.getMonth()+1) + "/" + getPostDate.getDate() + "/" + getPostDate.getFullYear()
        // console.log(postDateFormat)
         
@@ -69,19 +69,68 @@ axios.get(urlKey).then(response =>{
         
 
     }
-    
-
-
 })
 
 
-// console.log(commentSection);
+//****Event Listner*****/
 
-// function displayComment(){
-//     //  hName.innerText = commentArray[i];
-//     //  pTime.innerText = commentArray2[i];
-//     //  pText.innerText = commentArray3[i];
-        
+const comForm = document.querySelector('#comment__btn');
+
+comForm.addEventListener('click',function(event){
+    event.preventDefault();
+       
+   const newDiv = document.createElement('div');
+   newDiv.classList.add('review__cornor');
+   parentDiv.appendChild(newDiv);
+
+   const childDiv = document.createElement('div');
+   newDiv.appendChild(childDiv);
+
+   const imgDiv = document.createElement('img');
+   imgDiv.classList.add("image_placeholder");
+   childDiv.appendChild(imgDiv);
+
+   const anotherDiv = document.createElement('div');
+   anotherDiv.classList.add("reviews");
+   newDiv.appendChild(anotherDiv);
+
+   const dateDiv = document.createElement('div');
+   newDiv.appendChild(dateDiv);
+
+   const hName = document.createElement("h2"); 
+   hName.classList.add('h_title');
+   anotherDiv.appendChild(hName);
+   
+   const pText = document.createElement("p");
+   pText.classList.add("user__comments");
+   anotherDiv.appendChild(pText);
+
+   const pTime = document.createElement("p");
+   pTime.classList.add("date");
+   dateDiv.appendChild(pTime);
+
+   const user_name = document.getElementById('name').value;
+   const comment_entry = document.getElementById('sentiments').value; 
+   hName.innerText = user_name;
+   pText.innerText = comment_entry;
+
+   const getDate = new Date();
+   const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear()
+   pTime.innerText = date;
+
+   document.getElementById("comment__field").reset();
+  
+})
+
+//Api data must be stored in API
+//New comment must be displayed with existing comments
+//the newest comment being on top
+
 
     
-// }
+    
+
+
+
+
+
