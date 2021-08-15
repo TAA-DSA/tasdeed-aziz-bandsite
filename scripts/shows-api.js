@@ -21,11 +21,11 @@ axios.get(urlKey).then (response =>{
     for (let i =0; i < showsData.length; i++){
 
          const showsDate = showsData[i].date;
-         //console.log(showsDate);
-        //  const getShowsDate = new Date(1630900800000);
-        //  console.log(getShowsDate);
-        // const showsDateFormat = getShowsDate.getMonth() + "/" + getShowsDate.getDate() + "/" + getShowsDate.getFullYear();
-        // console.log(showsDateFormat);
+         //Parse to change date into number
+         const sDate = parseInt(showsDate,10);
+         const getShowsDate = new Date(sDate);
+         const showsDateFormat = getShowsDate.toDateString()
+         console.log(showsDateFormat);
 
         const showsVenue = showsData[i].place;
         //console.log(showsVenue);
@@ -46,7 +46,7 @@ axios.get(urlKey).then (response =>{
         const listDates = document.createElement('li');
         unorderedLst.appendChild(listDates);
 
-        listDates.innerHTML = showsDate;
+        listDates.innerHTML = showsDateFormat;
          
         const subDivTwo = document.createElement('div');
         divOne.appendChild(subDivTwo);
@@ -81,33 +81,13 @@ axios.get(urlKey).then (response =>{
         buyBtn.innerHTML = 'BUY TICKETS'
 
 
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+    
+
+    
+
+
 
 
 

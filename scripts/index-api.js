@@ -58,6 +58,7 @@ axios.get(urlKey).then(response =>{
 
         const postTimeStamp = commentData[i].timestamp
         //console.log(postTimeStamp);
+        console.log(typeof(postTimeStamp))
         const getPostDate = new Date(postTimeStamp);
         // console.log(getPostDate);
        const postDateFormat = (getPostDate.getMonth()+1) + "/" + getPostDate.getDate() + "/" + getPostDate.getFullYear()
