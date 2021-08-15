@@ -1,22 +1,12 @@
 //Code works fine, something wrong with the CSS so comment should be of same length as the defined otherwise the display
 // is not as  mock up.
 
-//Api key
-const apiKey = "108867b9-722a-4592-b22c-6a1000131f86"
-
-//Api check
-axios.get('https://project-1-api.herokuapp.com/?api_key=108867b9-722a-4592-b22c-6a1000131f86').then(response =>{
-    const result = respose.data
-    console.log(result);
-})
-
-
 const comForm = document.querySelector('#comment__btn');
 
 const parentDiv = document.querySelector('.review__container');
-console.log(parentDiv);
+// console.log(parentDiv);
 const getDate = new Date();
-const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear()
+const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear();
 
 
 const commentArray = ['Cornor Walton', 'Elilie Beach', 'Miles Acosta'];
@@ -25,13 +15,15 @@ const commentArray3 = ["This is art. This is inexplicable magic expressed in the
 "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
 "I can't stop listening. Everytime I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my. What a beautiful expression of creativity. Can't get enough."];  
 
-console.log(commentArray);
+// console.log(commentArray);
 
 for (let i=0; i <commentArray.length; i++){
 
     const newDiv = document.createElement('div');
     newDiv.classList.add('review__cornor');
     parentDiv.appendChild(newDiv);
+
+    //console.log(newDiv);
 
     const childDiv = document.createElement('div');
     newDiv.appendChild(childDiv);
@@ -59,9 +51,9 @@ for (let i=0; i <commentArray.length; i++){
     pTime.classList.add("date");
     dateDiv.appendChild(pTime);
     
-    hName.innerText = commentArray[i];
-    pTime.innerText = commentArray2[i];
-    pText.innerText = commentArray3[i];
+    // hName.innerText = commentArray[i];
+    // pTime.innerText = commentArray2[i];
+    // pText.innerText = commentArray3[i];
     
 
 }
