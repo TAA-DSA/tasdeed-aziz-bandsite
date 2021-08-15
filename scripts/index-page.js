@@ -8,7 +8,7 @@ const parentDiv = document.querySelector('.review__container');
 const getDate = new Date();
 const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear();
 
-
+//Comment Array 
 const commentArray = ['Cornor Walton', 'Elilie Beach', 'Miles Acosta'];
 const  commentArray2  = ['02/17/2021','01/09/2021', '12/20/2020' ];  
 const commentArray3 = ["This is art. This is inexplicable magic expressed in the purest way,everything that makes up this majestic work deserves reverence. Let us appreciate this for what what it is and what it contains.",
@@ -51,9 +51,9 @@ for (let i=0; i <commentArray.length; i++){
     pTime.classList.add("date");
     dateDiv.appendChild(pTime);
     
-    // hName.innerText = commentArray[i];
-    // pTime.innerText = commentArray2[i];
-    // pText.innerText = commentArray3[i];
+    hName.innerText = commentArray[i];
+    pTime.innerText = commentArray2[i];
+    pText.innerText = commentArray3[i];
     
 
 }
