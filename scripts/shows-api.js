@@ -45,6 +45,7 @@ axios.get(urlKey).then (response =>{
         subDiv.appendChild(unorderedLst);
 
         const listDates = document.createElement('li');
+        listDates.classList.add('shows--date');
         unorderedLst.appendChild(listDates);
 
         listDates.innerHTML = showsDateFormat;
@@ -80,6 +81,8 @@ axios.get(urlKey).then (response =>{
         subDivFour.appendChild(buyBtn);
 
         buyBtn.innerHTML = 'BUY TICKETS'
+
+
     }
 
 })

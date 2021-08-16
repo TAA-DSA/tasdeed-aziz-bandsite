@@ -302,6 +302,7 @@
        display: flex;
        justify-content: space-around;
        border-bottom:0.25rem solid #e1e1e1 ;
+       
    }
 
    .table__data li{
@@ -325,27 +326,30 @@
 
    .header__container{
        display: flex;
+       justify-content: space-evenly;
+       
+    
     
    }
 
    .table__header--dates{
-       position: relative;
-       padding-left: 1.5rem;
-       padding-right: 1.5rem;
-       color: #e1e1e1;
-       left:12%;
+      position: relative;
+      left:-113%;
+      font-style: bold;
+      color: #e1e1e1;
+       
    }
 
    .table__header--venue{
         position: relative;
-        padding-left: 5.5rem;
-        padding-right: 4rem;
+        left: -127%;
         color: #e1e1e1;
 
    }
 
    .table__header--location{
        position: relative;
+       left:-136%;
        color: #e1e1e1;
    }
 
@@ -368,7 +372,10 @@
        background-color: black;
        color:white;
    }
-
+   
+   .shows--date{
+       font-weight: 700;
+   }
    
    
 
@@ -425,18 +432,22 @@
     }
 
     .table__header--dates{
-        padding-left: 5.8rem;
-        color: #e1e1e1;
-        left:22%;
+         left:-252%;
     }
  
     .table__header--venue{
          position: relative;
-         padding-left: 18rem;
-         padding-right: 16rem;
-         color: #e1e1e1;
+         left: -254%;
+         
  
     }
+
+    .table__header--location{
+        position: relative;
+        left:-224%;
+    }
+
+
 
     .new__table{
         padding-right: 2rem;
@@ -446,3 +457,5 @@
 
     
 }
+
+//Change position use different matrix
