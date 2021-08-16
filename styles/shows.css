@@ -312,6 +312,10 @@
     background-color: black;
     color: white;
   }
+
+  .comment__data input {
+    width: 250%;
+  }
 }
 @media screen and (min-width: 80rem) {
   .header__img {

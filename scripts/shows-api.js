@@ -79,16 +79,9 @@ axios.get(urlKey).then (response =>{
         subDivFour.appendChild(buyBtn);
 
         buyBtn.innerHTML = 'BUY TICKETS'
-
-
     }
 
-    
-
-    
-
-
-
-
-
 })
+
+//Insert Header
+//Insert button eventListner
