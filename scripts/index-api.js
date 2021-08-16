@@ -125,7 +125,7 @@ comForm.addEventListener('click',function(event){
 
    const getDate = new Date();
    const date = (getDate.getMonth()+ 1) + "/" + getDate.getDate() + "/" + getDate.getFullYear()
-   pTime.innerText = date;
+   pTime.innerText =date;
 
 
    axios.post(urlKey,{
@@ -145,10 +145,6 @@ comForm.addEventListener('click',function(event){
 
 
    
-
-   
-
-//the newest comment being on top {ushift}
 //add a delete function
 
     

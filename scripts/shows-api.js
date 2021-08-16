@@ -10,7 +10,7 @@ console.log(urlKey);
 //Target the section section to create divs
 
 const parentDiv = document.querySelector('.new__table');
-console.log(parentDiv); 
+//console.log(parentDiv); 
 
 //Accessing the Api
 
@@ -26,7 +26,7 @@ axios.get(urlKey).then (response =>{
          const sDate = parseInt(showsDate,10);
          const getShowsDate = new Date(sDate);
          const showsDateFormat = getShowsDate.toDateString()
-         console.log(showsDateFormat);
+         //console.log(showsDateFormat);
 
         const showsVenue = showsData[i].place;
         //console.log(showsVenue);
@@ -81,11 +81,11 @@ axios.get(urlKey).then (response =>{
         subDivFour.appendChild(buyBtn);
 
         buyBtn.innerHTML = 'BUY TICKETS'
-
-
+      
+       
     }
 
 })
 
-//Insert Header
-//Insert button eventListner
+
+
