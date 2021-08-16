@@ -322,15 +322,43 @@
        padding-right:17rem;
    }
     
-   .table__header{
-       color: #e1e1e1;
-       padding-bottom: 1rem;
-       font-size: 1rem;
-       
+
+   .header__container{
+       display: flex;
+    
    }
 
+   .table__header--dates{
+       position: relative;
+       padding-left: 1.5rem;
+       padding-right: 1.5rem;
+       color: #e1e1e1;
+       left:12%;
+   }
+
+   .table__header--venue{
+        position: relative;
+        padding-left: 5.5rem;
+        padding-right: 4rem;
+        color: #e1e1e1;
+
+   }
+
+   .table__header--location{
+       position: relative;
+       color: #e1e1e1;
+   }
+
+
+
+   
+    
+
+   
+
+
    #btn{
-       width: 53%;
+       width: 60%;
        height: 2rem;
        margin-top: 1rem;
        margin-bottom: 1rem;
@@ -341,10 +369,7 @@
        color:white;
    }
 
-   .comment__data input{
-    width: 250%;
-}
-
+   
    
 
   
@@ -393,13 +418,31 @@
     .shows__all{
         display: flex;
         align-items: center;
-      
-       
     }
  
     .sound__cloud{
         padding-left: 5rem;
     }
+
+    .table__header--dates{
+        padding-left: 5.8rem;
+        color: #e1e1e1;
+        left:22%;
+    }
+ 
+    .table__header--venue{
+         position: relative;
+         padding-left: 18rem;
+         padding-right: 16rem;
+         color: #e1e1e1;
+ 
+    }
+
+    .new__table{
+        padding-right: 2rem;
+    }
+ 
+   
 
     
 }

@@ -72,6 +72,16 @@ axios.get(urlKey).then(response =>{
     }
 })
 
+        axios.post(urlKey,{
+            name: 'Fred',
+            comment: 'what a cool site'
+        }).then(function (response){
+            console.log(response);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+
 
 //****Event Listner*****/
 
