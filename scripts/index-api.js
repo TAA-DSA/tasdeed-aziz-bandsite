@@ -128,15 +128,15 @@ comForm.addEventListener('click',function(event){
    pTime.innerText = date;
 
 
-//    axios.post(urlKey,{
-//         name: hName.innerHTML,
-//         comment: pText.innerHTML
-//     }).then(function (response){
-//         console.log(response);
-//     })
-//     .catch(error => {
-//         console.log(error);
-//     })
+   axios.post(urlKey,{
+        name: hName.innerHTML,
+        comment: pText.innerHTML
+    }).then(function (response){
+        console.log(response);
+    })
+    .catch(error => {
+        console.log(error);
+    })
 
 
    document.getElementById("comment__field").reset();
@@ -148,7 +148,7 @@ comForm.addEventListener('click',function(event){
 
    
 
-//the newest comment being on top
+//the newest comment being on top {ushift}
 //add a delete function
 
     
