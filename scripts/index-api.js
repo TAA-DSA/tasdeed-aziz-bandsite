@@ -9,7 +9,7 @@ console.log(urlKey);
 
 //target the section
 const parentDiv = document.querySelector('.review__container');
-console.log(parentDiv);
+//console.log(parentDiv);
 
 //Axios function
 axios.get(urlKey).then(response =>{
@@ -58,7 +58,7 @@ axios.get(urlKey).then(response =>{
 
         const postTimeStamp = commentData[i].timestamp
         //console.log(postTimeStamp);
-        console.log(typeof(postTimeStamp))
+        //console.log(typeof(postTimeStamp))
         const getPostDate = new Date(postTimeStamp);
         // console.log(getPostDate);
        const postDateFormat = (getPostDate.getMonth()+1) + "/" + getPostDate.getDate() + "/" + getPostDate.getFullYear()
@@ -128,15 +128,15 @@ comForm.addEventListener('click',function(event){
    pTime.innerText = date;
 
 
-   axios.post(urlKey,{
-        name: hName.innerHTML,
-        comment: pText.innerHTML
-    }).then(function (response){
-        console.log(response);
-    })
-    .catch(error => {
-        console.log(error);
-    })
+//    axios.post(urlKey,{
+//         name: hName.innerHTML,
+//         comment: pText.innerHTML
+//     }).then(function (response){
+//         console.log(response);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     })
 
 
    document.getElementById("comment__field").reset();
@@ -144,29 +144,12 @@ comForm.addEventListener('click',function(event){
 })
 
 
-    // deleteURL = `${apiURL}/32dab178-2af3-484b-96d1-506bfc64517e/?api_key=${apiKey}?api_key=${apiKey}`
-    // console.log(deleteURL);
+   
 
+   
 
-    // axios.delete(`${apiURL}/32dab178-2af3-484b-96d1-506bfc64517e/?api_key=${apiKey}?api_key=${apiKey}`).then(response=>{
-    //     console.log(response)
-    //     console.log(response.data)
-    // })
-
-    // axios.post(urlKey,{
-    //     name: 'Fred',
-    //     comment: 'what a cool site'
-    // }).then(function (response){
-    //     console.log(response);
-    // })
-    // .catch(error => {
-    //     console.log(error);
-    // })
-
-//Api data must be stored in API
-//New comment must be displayed with existing comments
 //the newest comment being on top
-
+//add a delete function
 
     
     
